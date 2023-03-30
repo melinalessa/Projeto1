@@ -1,1 +1,16 @@
-print(10)
+import tkinter as tk
+
+calculate = ""
+
+def add_to_calculation(symbol):
+    pass
+
+def evaluate_calculation():
+    pass
+
+def clear_field():
+    pass
+
+root = tk.Tk()
+root.geometry("300x275")
+root.mainloop()
