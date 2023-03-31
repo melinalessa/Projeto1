@@ -4,9 +4,9 @@ calculate = ""
 
 def add_to_calculation(symbol):
     global calculation
-    calculation += str(symbol)
+    calculation = str(symbol)
     text_result.delete(1.0, "end")
-    tex_result.insert(1.0, calculation)
+    text_result.insert(1.0, calculation)
     
 
 
