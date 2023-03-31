@@ -1,10 +1,11 @@
 import tkinter as tk
 
-calculate = ""
+calculation = ""
+
 
 def add_to_calculation(symbol):
     global calculation
-    calculation = str(symbol)
+    calculation += str(symbol)
     text_result.delete(1.0, "end")
     text_result.insert(1.0, calculation)
     
@@ -12,7 +13,6 @@ def add_to_calculation(symbol):
 
 def evaluate_calculation():
     global calculation
-        
     try:
         calculation = str(eval(calculation))
         text_result.delete(1.0, "end")
